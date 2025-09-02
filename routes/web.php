@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('menu');
+});
+Route::get('/productos', function () {
+    return view('productos');
+});
+
+Route::get('/carrito', function () {
+    return view('carrito');
+});
+
+Route::get('/detalle', function () {
+    return view('detalle');
 });
