@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Landing Page</title>
-        <style>
+    <style>
         /* Estilos generales */
         body {
             font-family: 'Roboto', sans-serif;
@@ -63,7 +63,8 @@
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 70px; /* Para que no se tape con el navbar */
+            margin-top: 70px;
+            /* Para que no se tape con el navbar */
         }
 
         .hero-section h1 {
@@ -100,6 +101,10 @@
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin: 4rem 2rem;
+        }
+
+        a {
+            text-decoration: none
         }
 
         .product-card {
@@ -204,10 +209,12 @@
     <!-- Sección de Productos -->
     <section id="productos" class="products-section">
         <div class="product-card">
-            <img src="https://via.placeholder.com/300x200" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <p>Descripción breve del producto.</p>
-            <div class="price">$49.99</div>
+            <a href="{{ url('/detalle') }}">
+                <img src="https://via.placeholder.com/300x200" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción breve del producto.</p>
+                <div class="price">$49.99</div>
+            </a>
         </div>
         <div class="product-card">
             <img src="https://via.placeholder.com/300x200" alt="Producto 2">
@@ -243,7 +250,9 @@
     <!-- Sección Sobre Nosotros -->
     <section id="sobre-nosotros" class="hero-section" style="background-color: #ecf0f1;">
         <h2>Sobre Nosotros</h2>
-        <p>Somos una tienda en línea dedicada a ofrecer los mejores productos al mejor precio. Con un enfoque en la calidad y el servicio al cliente, trabajamos incansablemente para brindarte una experiencia de compra inigualable.</p>
+        <p>Somos una tienda en línea dedicada a ofrecer los mejores productos al mejor precio. Con un enfoque en la
+            calidad y el servicio al cliente, trabajamos incansablemente para brindarte una experiencia de compra
+            inigualable.</p>
     </section>
 
     <!-- Footer -->
